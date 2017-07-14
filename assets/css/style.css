@@ -27,20 +27,24 @@ body, html {
 header {
   height: 42.5em;
   background-color: white;
-  padding-top: 1px; }
+  padding-top: 1px;
+  position: relative; }
 
 main {
-  padding: 0 1.25em 0; }
+  padding: 2em 1.25em 0; }
   main p {
     padding: 0 1em 0; }
 
 .shows-list {
   overflow: hidden;
-  padding-bottom: 1em; }
+  padding-bottom: 1em;
+  max-width: 90em;
+  margin-left: auto;
+  margin-right: auto; }
 
 .show-item {
-  float: left;
-  margin: 2.25em 1.25em 0;
+  display: inline-block;
+  margin: 2.25em 1.2em 0;
   width: 11.86em;
   min-height: 10em;
   position: relative;
@@ -49,13 +53,39 @@ main {
     display: block;
     width: 100%; }
 
+.arrow_content, .arrow_top {
+  position: absolute;
+  overflow: hidden;
+  height: 0;
+  display: block;
+  background: none 50%/contain no-repeat transparent;
+  left: 50%; }
+
+.arrow_content {
+  bottom: -2.3em;
+  background-image: url(../img/ui-arrow-downwards.png);
+  width: 5.4166666667em;
+  margin-left: -2.7083333334em;
+  padding-top: 6em; }
+
+.arrow_top {
+  top: -4.7em;
+  background-image: url(../img/ui-arrow-upwards.png);
+  width: 2.8333333333em;
+  margin-left: -1.4166666667em;
+  padding-top: 3em; }
+
+#main {
+  padding-top: 1em; }
+
 footer.footer {
   height: 5.75em;
   background-color: #777777;
   color: #eeeeee;
   margin-top: 6.3333333333em;
   display: table;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   footer.footer p {
     font-size: 1em;
     margin: 0;
@@ -592,10 +622,39 @@ h3 {
   text-shadow: none; }
 
 @media only screen and (min-width: 1024px) {
+  header {
+    height: 41.6666666667em; }
   body {
     font-size: 12px; }
-  footer.footer p span {
-    display: inline; } }
+  footer.footer {
+    margin-top: 8.58em; }
+    footer.footer p {
+      font-size: 1.33em; }
+      footer.footer p span {
+        display: inline; }
+  h1 {
+    line-height: 5.2833333333em; }
+  h2 {
+    font-size: 3.5em;
+    font-weight: 300;
+    margin-top: 1.5em; }
+  h3 {
+    font-size: 2.66em; }
+  .arrow_content {
+    width: 7.5em;
+    margin-left: -3.75em;
+    padding-top: 8.1666666667em;
+    bottom: -3.1em; }
+  .arrow_top {
+    width: 3.8333333333em;
+    padding-top: 4.1em;
+    margin-left: -1.9166665em;
+    top: -6.6em; }
+  p {
+    font-size: 2.33em; }
+  .show-item {
+    margin: 2.25em 1.5em 0;
+    width: 15.83em; } }
 
 @media print {
   * {
