@@ -25,10 +25,10 @@ body, html {
   min-height: 100vh; }
 
 header {
-  height: 42.5em;
   background-color: white;
   padding-top: 1px;
-  position: relative; }
+  position: relative;
+  height: 100vh; }
 
 main {
   padding: 2em 1.25em 0; }
@@ -79,7 +79,6 @@ main {
   padding-top: 1em; }
 
 footer.footer {
-  height: 5.75em;
   background-color: #777777;
   color: #eeeeee;
   margin-top: 6.3333333333em;
@@ -92,9 +91,29 @@ footer.footer {
     text-align: center;
     line-height: 1.3;
     vertical-align: middle;
-    display: table-cell; }
+    display: table-cell;
+    padding: 1em; }
     footer.footer p span {
       display: block; }
+    footer.footer p a {
+      color: inherit;
+      text-decoration: inherit;
+      text-transform: uppercase;
+      margin-top: 1em;
+      display: inline-block; }
+      footer.footer p a:hover {
+        color: #6d2dd2; }
+
+.privacy {
+  padding: 1em; }
+  .privacy p {
+    font-size: 1.5em; }
+  .privacy h4 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 2em; }
+  .privacy > * {
+    padding: 0; }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -578,10 +597,13 @@ p {
 h1 {
   background: url(../img/universal_kids.png) center center/auto 100% no-repeat transparent;
   color: transparent;
-  margin-top: 18.33em;
+  margin-top: 43vh;
   margin-bottom: 0;
   font-size: 1em;
   line-height: 2.29em; }
+  h1 a {
+    color: inherit;
+    display: block; }
 
 h2 {
   font-size: 2em;
@@ -594,7 +616,7 @@ h2 {
   h2 sup {
     top: -.24em; }
 
-h3 {
+h3, h4, h5 {
   font-size: 1.5em;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -621,6 +643,9 @@ h3 {
   color: #fff;
   text-shadow: none; }
 
+.align-left {
+  text-align: left; }
+
 @media only screen and (min-width: 1024px) {
   header {
     height: 41.6666666667em; }
@@ -632,8 +657,12 @@ h3 {
       font-size: 1.33em; }
       footer.footer p span {
         display: inline; }
+      footer.footer p a:before {
+        content: " | ";
+        padding: 0 .6em; }
   h1 {
-    line-height: 5.2833333333em; }
+    line-height: 5.2833333333em;
+    margin-top: 18.33em; }
   h2 {
     font-size: 3.5em;
     font-weight: 300;
