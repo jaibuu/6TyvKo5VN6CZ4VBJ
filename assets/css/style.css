@@ -652,7 +652,8 @@ h3, h4, h5 {
   body {
     font-size: 12px; }
   footer.footer {
-    margin-top: 8.58em; }
+    margin-top: 8.58em;
+    padding-bottom: 1em; }
     footer.footer p {
       font-size: 1.33em; }
       footer.footer p span {
