@@ -71,9 +71,9 @@ main {
 .arrow_top {
   top: -4.7em;
   background-image: url(../img/ui-arrow-upwards.png);
-  width: 2.8333333333em;
-  margin-left: -1.4166666667em;
-  padding-top: 3em; }
+  width: 5.38333em;
+  margin-left: -2.69167em;
+  padding-top: 5.7em; }
 
 #main {
   padding-top: 1em; }
@@ -92,9 +92,10 @@ footer.footer {
     line-height: 1.3;
     vertical-align: middle;
     display: table-cell;
-    padding: 1em; }
+    padding: 2em; }
     footer.footer p span {
-      display: block; }
+      display: block;
+      margin-bottom: 1em; }
     footer.footer p a {
       color: inherit;
       text-decoration: inherit;
@@ -677,9 +678,9 @@ h3, h4, h5 {
     padding-top: 8.1666666667em;
     bottom: -3.1em; }
   .arrow_top {
-    width: 3.8333333333em;
-    padding-top: 4.1em;
-    margin-left: -1.9166665em;
+    width: 7.475em;
+    padding-top: 7.995em;
+    margin-left: -3.7375em;
     top: -6.6em; }
   p {
     font-size: 2.33em; }
