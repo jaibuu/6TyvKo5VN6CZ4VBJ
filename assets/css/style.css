@@ -81,7 +81,7 @@ main {
 footer.footer {
   background-color: #777777;
   color: #eeeeee;
-  margin-top: calc(50vh - 4.4em);
+  margin-top: 6.3333333333em;
   display: table;
   width: 100%;
   position: relative; }
@@ -598,6 +598,7 @@ h1 {
   background: url(../img/universal_kids.png) center center/auto 100% no-repeat transparent;
   color: transparent;
   margin-top: 43vh;
+  margin-top: calc(50vh - 4.4em);
   margin-bottom: 0;
   font-size: 1em;
   line-height: 2.29em; }
